@@ -2,7 +2,7 @@
 
 # CHECK IF RUNNING AS ROOT OR SUDO 
 if [ "$(id -u)" != "0" ]; then
-	echo "Please run as root or use sudo."
+	echo "Please run as root or use sudo ./wstunnel-systemd.sh"
 	exit 1
 fi
 
