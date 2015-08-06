@@ -63,7 +63,7 @@ EOF
 systemctl daemon-reload
 
 # ENABLE WSTUNNEL SERVICE
-echo "enabling wstunnel.service"
+echo "Enabling wstunnel.service on startup"
 systemctl enable wstunnel.service
 
 echo "The rsc binary is located in /usr/local/bin/rsc and config file created in /etc/default/wstunnel.config.
