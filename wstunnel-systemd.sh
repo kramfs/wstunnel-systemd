@@ -24,7 +24,7 @@ cat <<EOF> /etc/default/wstunnel.config
 
 # Rendez-vous token: the HTTP client at the other end needs to use the same token to rendez-vous
 # with the client running here. Use something secret minimum of 16 up to 31 characters!
-#TOKEN=temp_jwG2gkEthvMkYO31VbFw=$
+# Example: TOKEN=temp_jwG2gkEthvMkYO31VbFw=$
 TOKEN=
 
 # Remote websockets tunnel endpoint to which this client connects to
