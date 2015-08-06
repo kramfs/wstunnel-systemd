@@ -36,7 +36,7 @@ SERVER=http://localhost
 
 # It is possible to allow the wstunnel to target multiple hosts too. WStunnel client must be configured 
 # with a regexp that limits the destination web server hostnames it allows.
-# If you OpenStack Keystone host has an IP of 192.168.0.1, then use http://192\..*.
+# If the OpenStack Keystone host has an IP of 192.168.0.1, then use http://192\..*.
 REGEXP='http://192\..*.'
 EOF
 
