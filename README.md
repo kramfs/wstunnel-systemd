@@ -15,6 +15,7 @@ Customize the required inputs
 
 Edit the following, replace the value. 
 > TOKEN=``
+
 > REGEXP=``
 
 For the TOKEN, use something secret minimum of 16 up to 31 characters, i.e TOKEN=`temp_jwG2gkEthvMkYO31VbFw=$`
