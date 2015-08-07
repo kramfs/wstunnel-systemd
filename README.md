@@ -27,4 +27,4 @@ Setup the environment
 
 Start the script
 -------------
-`systemctl start wstunnel.service`
+`sudo systemctl start wstunnel.service`
