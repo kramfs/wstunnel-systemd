@@ -19,7 +19,7 @@ rm -Rf wstunnel/
 
 # GENERATE CONFIG FILE
 
-cat <<EOF> /etc/default/wstunnel.config
+cat << 'EOF' > /etc/default/wstunnel.config
 # Configuration for wstunnel service - place in /etc/default/wstuncli 
 
 # Rendez-vous token: the HTTP client at the other end needs to use the same token to rendez-vous
@@ -49,7 +49,7 @@ Wants=
 
 [Service]
 EnvironmentFile=/etc/default/wstunnel.config
-ExecStart=/usr/local/bin/wstunnel cli -regexp \$REGEXP -token \$TOKEN -tunnel \$TUNNEL -server \$SERVER -logfile /var/log/wstuncli.log
+ExecStart=/usr/local/bin/wstunnel cli -regexp $REGEXP -token $TOKEN -tunnel $TUNNEL -server $SERVER -logfile /var/log/wstuncli.log
 KillMode=process
 Restart=on-failure
 #RestartSec=42s
