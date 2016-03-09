@@ -42,7 +42,7 @@ EOF
 
 # CREATE THE SYSTEMD SERVICE SCRIPT
 cat << 'EOF' > /usr/lib/systemd/system/wstunnel.service
-"[Unit]
+[Unit]
 Description=Setup wstunnel to RightScale
 After=network.target
 Wants=
@@ -55,7 +55,7 @@ Restart=on-failure
 #RestartSec=42s
 
 [Install]
-WantedBy=multi-user.target"
+WantedBy=multi-user.target
 EOF
 
 
