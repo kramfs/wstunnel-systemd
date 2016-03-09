@@ -41,7 +41,7 @@ REGEXP='http://192\..*.'
 EOF
 
 # CREATE THE SYSTEMD SERVICE SCRIPT
-cat <<EOF> /usr/lib/systemd/system/wstunnel.service
+cat << 'EOF' > /usr/lib/systemd/system/wstunnel.service
 "[Unit]
 Description=Setup wstunnel to RightScale
 After=network.target
