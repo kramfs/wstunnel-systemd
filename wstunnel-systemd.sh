@@ -28,6 +28,10 @@ cat << 'EOF' > /etc/default/wstunnel.config
 TOKEN=
 
 # Remote websockets tunnel endpoint to which this client connects to
+# Identify the shard for the RightScale account with which you are going to use this OpenStack environment.
+# This is found by going to your rightscale account and navigate to **Settings** > **Account Settings** > **API Credentials** and noting if the Token Endpoint is us-3.rightscale.com or us-4.rightscale.com.
+# - If us-3 then use wss://wstunnel1-1.rightscale.com
+# - If us-4 then use wss://wstunnel10-1.rightscale.com
 TUNNEL=wss://wstunnel10-1.rightscale.com
 
 # Local server to which HTTP requests are forwarded, this is the web server to which requests
