@@ -1,5 +1,5 @@
 # Description
-Download wstunnel and setup systemd style service script. This assume the wstunnel service will run in the horizon server
+Download wstunnel and setup systemd style service script. This assume the wstunnel service will run in the keystone server.
 
 Clone
 -------------
