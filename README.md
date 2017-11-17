@@ -35,3 +35,8 @@ Setup the environment
 Start the script
 -------------
 `sudo systemctl start wstunnel.service`
+
+To test, you can run a simple webserver and do a curl test using the RightScale URI
+`python -m SimpleHTTPServer 80`
+
+`curl -Isk 'https://wstunnel10-1.rightscale.com/_token/YOUR_TOKEN/`
