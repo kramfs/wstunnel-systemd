@@ -9,13 +9,13 @@ fi
 # DOWNLOAD THE WSTUNNEL BINARY
 
 cd /tmp
-wget https://binaries.rightscale.com/rsbin/wstunnel/1.0/wstunnel-linux-amd64.tgz 
+wget https://binaries.rightscale.com/rsbin/wstunnel/1.0.6/wstunnel-linux-amd64.tgz 
 tar zxvf wstunnel-linux-amd64.tgz 
 chmod -v +x wstunnel/wstunnel
 sudo mv -vf wstunnel/wstunnel /usr/local/bin/
 /usr/local/bin/wstunnel version
-rm -Rf wstunnel/
 
+rm -Rvf wstunnel/ wstunnel-*.tgz
 
 # GENERATE CONFIG FILE
 
@@ -45,7 +45,7 @@ REGEXP='http://192\..*.'
 EOF
 
 # CREATE THE SYSTEMD SERVICE SCRIPT
-cat << 'EOF' > /usr/lib/systemd/system/wstunnel.service
+cat << 'EOF' > /etc/systemd/system/wstunnel.service
 [Unit]
 Description=Setup wstunnel to RightScale
 After=network.target
