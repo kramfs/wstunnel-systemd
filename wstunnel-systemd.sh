@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/bash 
 
 # CHECK IF RUNNING AS ROOT OR SUDO 
 if [ "$(id -u)" != "0" ]; then
