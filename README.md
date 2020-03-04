@@ -1,5 +1,5 @@
 # Description
-Download wstunnel and setup systemd style service script. This assume the wstunnel service will run in the keystone server.
+Download wstunnel and setup systemd style service script.
 
 WStunnel - Web Sockets Tunnel project page
 https://github.com/rightscale/wstunnel
